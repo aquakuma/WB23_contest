@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  
+  
+  <title>就職作品プレゼンテーション2020参加申し込みフォーム</title>
+  <meta name="description" content = "">
+
+  <script src="./js/javascript.js"></script>
+  <script src="https://code.jquery.com/jquery-2.0.0.js"></script>
+  <script src="./js/jquery.autoKana.js"></script>
+</head>
+<body>
+<!--ナビゲーション-->
+<header>
+    <a href="https://www.hal.ac.jp/"> <img src="images/hal_logo.svg" alt="hal_logo"> </a>
+</header>
+<!--ナビゲーションEND-->
+<div class="title">
+    <h1>就職作品プレゼンテーション2020参加申し込みフォーム</h1>
+</div>
+
+<!--home-->
+
+<div id="page1">
+
+    <div class="aisatsu">
+        <h2>この度は、HAL就職作品プレゼンテーションにご参加の申し込みをいただきありがとうございます。</h2>
+    </div>
+      
+    <div class="content">
+        <div class="bar">
+            <h2>登録方法について</h2>
+        </div>
+        
+        <article>参加を希望する学校の参加ボタンをチェックし、各分野ごとに見学予定人数を入力してください。
+            なお、一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください。
+            企業情報、ご担当者（代表者様）の情報も漏れなく入力ください。</article>
+    
+        <div class="bar">
+            <h2>ご注意</h2>
+        </div>
+    
+        <article>複数の日程を一度に登録することは出来ません。複数日程に参加いただく場合は、お手数ですが参加日程ごとに終了せずに連続で登録・確認及び送信してください。
+        </article>
+    
+        
+        <div class="bar">
+            <h2>参加希望学校</h2>
+        </div>
+    
+        <article id = "schoo">
+            <a href="JavaScript:tokyo()"><img src="images/tokyo_logo.svg" alt="tokyo_logo"></a>
+            <a href="JavaScript:osaka()"><img src="images/osaka_logo.svg" alt="osaka_logo"></a>
+            <a href="JavaScript:nagoya()"><img src="images/nagoya_logo.svg" alt="nagoya_logo"></a>
+        </article>
+    </div>
+</div>
+
+<!--page2_東京-->
+<div id = "page2_tokyo">
+    <div class="school_logo">
+        <img src="images/tokyo_logo.svg" alt="tokyo_logo" id = "select_logo">
+    </div>
+
+
+    <div class="step_wrap">
+        <ol class="step">
+            <li class="is-current">学科選択</li>
+            <li>情報入力</li>
+            <li>確認</li>
+            <li>完成</li>
+          </ol>   
+    </div>
+
+    <div class="content">
+        <div class="bar">
+            <h2>学科選択</h2>
+        </div>
+        <article>
+            各分野ごとに見学予定人数を入力してください。
+            なお、一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください。
+        </article>
+
+        <form action="JavaScript:next3()" name="page2_tokyo_info">
+            <table>
+                <tr>
+                    <td>２月１５日（木）：</td>
+                    <td><input type="checkbox" name="classselect" value="game">ゲーム分野 <br>
+                        <input type="checkbox" name="classselect" value="digital">デジタル映像分野 <br>
+                        <input type="checkbox" name="classselect" value="sound">サウンド分野 
+                    </td>
+                    <td>
+                        人数 
+                        <select name="game_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="digital_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="sound_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>２月１６日（金）：</td>
+
+                    <td><input type="checkbox" name="classselect" value="graphic">グラフィックデザイン分野 <br>
+                        <input type="checkbox" name="classselect" value="it">情報処理システム分野 <br>
+                        <input type="checkbox" name="classselect" value="web">WEB開発分野 <br>
+                        <input type="checkbox" name="classselect" value="control">制御系システム分野 <br>
+                        <input type="checkbox" name="classselect" value="car">カーデザイン分野 
+                    </td>
+                    <td>
+                        人数 
+                        <select name="graphic_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="it_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="web_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="control_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="car_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="sent">
+                <input type="button" onclick="gohome()" value="戻る" class="back">
+                <input type="submit" value="次へ" class="next">
+            </div>           
+        </form>      
+    </div>
+
+</div>
+
+<!--page2_大阪-->
+<div id = "page2_osaka">
+    <div class="school_logo">
+        <img src="images/osaka_logo.svg" alt="logo" id = "select_logo">
+    </div>
+
+
+    <div class="step_wrap">
+        <ol class="step">
+            <li class="is-current">学科選択</li>
+            <li>情報入力</li>
+            <li>確認</li>
+            <li>完成</li>
+          </ol>   
+    </div>
+
+    <div class="content">
+        <div class="bar">
+            <h2>学科選択</h2>
+        </div>
+        <article>
+            各分野ごとに見学予定人数を入力してください。
+            なお、一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください。
+        </article>
+
+        <form action="JavaScript:next3()" name="page2_osaka_info">
+            <table>
+                <tr>
+                    <td>２月２日（金）：</td>
+                    <td><input type="checkbox" name="classselect" value="game">ゲーム分野 <br>
+                        <input type="checkbox" name="classselect" value="digital">デジタル映像分野 <br>
+                        <input type="checkbox" name="classselect" value="sound">サウンド分野 <br>
+                        <input type="checkbox" name="classselect" value="graphic">グラフィックデザイン分野 <br>
+                        <input type="checkbox" name="classselect" value="it">情報処理システム分野 <br>
+                        <input type="checkbox" name="classselect" value="web">WEB開発分野 <br>
+                        <input type="checkbox" name="classselect" value="control">制御系システム分野 <br>
+                        <input type="checkbox" name="classselect" value="car">カーデザイン分野 
+                    </td>
+                    <td>
+                        人数 
+                        <select name="game_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="digital_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="sound_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="graphic_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="it_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="web_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="control_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="car_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="sent">
+                <input type="button" onclick="gohome()" value="戻る" class="back">
+                <input type="submit" value="次へ" class="next">
+            </div>           
+        </form>      
+    </div>
+</div>
+
+
+<!--page2_名古屋-->
+<div id = "page2_nagoya">
+    <div class="school_logo">
+        <img src="images/nagoya_logo.svg" alt="logo" id = "select_logo">
+    </div>
+
+
+    <div class="step_wrap">
+        <ol class="step">
+            <li class="is-current">学科選択</li>
+            <li>情報入力</li>
+            <li>確認</li>
+            <li>完成</li>
+          </ol>   
+    </div>
+
+    <div class="content">
+        <div class="bar">
+            <h2>学科選択</h2>
+        </div>
+        <article>
+            各分野ごとに見学予定人数を入力してください。
+            なお、一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください。
+        </article>
+
+        <form action="JavaScript:next3()" name="page2_nagoya_info">
+            <table>
+                <tr>
+                    <td>２月９日（金）：</td>
+                    <td><input type="checkbox" name="classselect" value="game">ゲーム分野 <br>
+                        <input type="checkbox" name="classselect" value="digital">デジタル映像分野 <br>
+                        <input type="checkbox" name="classselect" value="sound">サウンド分野 <br>
+                        <input type="checkbox" name="classselect" value="graphic">グラフィックデザイン分野 <br>
+                        <input type="checkbox" name="classselect" value="it">情報処理システム分野 <br>
+                        <input type="checkbox" name="classselect" value="web">WEB開発分野 <br>
+                        <input type="checkbox" name="classselect" value="control">制御系システム分野 <br>
+                        <input type="checkbox" name="classselect" value="car">カーデザイン分野 
+                    </td>
+                    <td>
+                        人数 
+                        <select name="game_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="digital_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="sound_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="graphic_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="it_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+    
+                        人数 
+                        <select name="web_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="control_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select><br>
+
+                        人数 
+                        <select name="car_people">
+                        <option value="0">0人</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                        <option value="7">7人</option>
+                        <option value="8">8人</option>
+                        <option value="9">9人</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="sent">
+                <input type="button" onclick="gohome()" value="戻る" class="back">
+                <input type="submit" value="次へ" class="next">
+            </div>           
+        </form>      
+    </div>
+</div>
+
+
+
+<!--page3-->
+
+
+<div id = "page3">
+    <div class="school_logo">
+        <img src="images/tokyo_logo.svg" alt="tokyo_logo" id = "select3_logo">
+    </div>
+
+
+    <div class="step_wrap">
+        <ol class="step">
+            <li>学科選択</li>
+            <li class="is-current">情報入力</li>
+            <li>確認</li>
+            <li>完成</li>
+          </ol>   
+    </div>
+
+    <div class="content">
+        <div class="bar">
+            <h2>情報入力</h2>
+        </div>
+        <form action="JavaScript:next4()" name="page3_info">
+            <div class="info_input">
+            
+                <table border="1">
+                    <tr>
+                        <td class="input_style">会社名　<span class="input_moji">【全角文字】</span>　<span class="input_hissu">必須</span></td>
+                        <td><input type="text" name="company" size="40" placeholder="例）ＨＡＬ東京" required></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="input_style">担当者代表氏名<span class="input_hissu">必須</span> 　<br> <span class="input_moji">【全角文字】</span></td>
+                        <td>姓 <span style="margin-left: 7px;"></span>　<input type="text" name="Applicant_family" id = "f_name" placeholder="例）春" required>　　<span style="margin-left: 4em;"></span>名 <span style="margin-left: 6px;"></span>　<input type="text" name="Applicant_first" id = "first_name" placeholder="例）太郎" required> <br>
+                            セイ　<input type="text" name="Applicant_family_katakana" placeholder="例）ハル" id = "f_name_kana" required> <span style="margin-left: 5em;"></span> メイ　<input type="text" name="Applicant_first_katakana" placeholder="例）タロウ" id = "first_name_kana" required>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td class="input_style">所属部署<span class="input_moji">【全角文字】</span>　<span class="input_hissu">必須</span></td>
+                        <td><input type="text" name="department" placeholder="例）営業部営業２課" required></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="input_style">電話番号　<span class="input_moji">【半角文字】</span>　<span class="input_hissu">必須</span></td>
+                        <td><input type="tel" name="phone" placeholder="例）03" required> － <input type="tel" name="phone" placeholder="例）1234" required> － <input type="tel" name="phone" placeholder="例）5678" required></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="input_style">メールアドレス　　<span class="input_hissu">必須</span> 　<br> <span class="input_moji">【半角英数字】</span></td>
+                        <td><input type="email" name="email" size="40" placeholder="例）hal_tokyo@hal.co.jp" required></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="input_style">FAX　<span class="input_moji">【半角文字】</span></td>
+                        <td><input type="tel" name="fax" placeholder="例）03"> － <input type="tel" name="fax" placeholder="例）1234"> － <input type="tel" placeholder="例）5678" name="fax"></td>
+                    </tr>
+                </table>
+    
+                <!--自動フリガナ-->
+                <script>
+                    $( document ).ready( function()
+                    {
+                        // 姓名 (カタカナ)
+                        $.fn.autoKana( "#f_name", "#f_name_kana", {
+                            katakana : true
+                        });
+                    
+                        $.fn.autoKana( "#first_name", "#first_name_kana", {
+                            katakana : true
+                        });
+                    });
+                    
+                </script>
+
+
+            
+            
+            </div>
+            <div class="sent">
+                <input type="button" onclick="back_page2()" value="戻る" class="back">
+                <input type="submit" value="次へ" class="next">
+            </div>         
+        </form>
+    </div>
+</div>
+
+
+
+<!--page4-->
+
+
+<div id = "page4">
+    <div class="school_logo">
+        <img src="images/tokyo_logo.svg" alt="tokyo_logo" id = "select4_logo">
+    </div>
+
+
+    <div class="step_wrap">
+        <ol class="step">
+            <li>学科選択</li>
+            <li>情報入力</li>
+            <li class="is-current">確認</li>
+            <li>完成</li>
+          </ol>   
+    </div>
+
+    <div class="content">
+        <div class="bar">
+            <h2>確認</h2>
+        </div>
+        <div class="info_input">
+        
+            <table border="1">
+                <tr>
+                    <td class="input_style">会社名</td>
+                    <td class="page4_table" id = "col1"></td>
+                </tr>
+    
+                <tr>
+                    <td class="input_style">担当者代表氏名</td>
+                    <td class="page4_table" id = "col2">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="input_style">所属部署</td>
+                    <td class="page4_table" id = "col3"></td>
+                </tr>
+    
+                <tr>
+                    <td class="input_style">電話番号</td>
+                    <td class="page4_table" id = "col4"></td>
+                </tr>
+    
+                <tr>
+                    <td class="input_style">メールアドレス</td>
+                    <td class="page4_table" id = "col5"></td>
+                </tr>
+    
+                <tr>
+                    <td class="input_style">FAX</td>
+                    <td class="page4_table" id = "col6"></td>
+                </tr>
+
+                <tr>
+                    <td class="input_style">参加学校</td>
+                    <td class="page4_table" id = "col7"></td>
+                </tr>
+    
+                <tr>
+                    <td class="input_style">参加学科（人数）</td>
+                    <td class="page4_table" id = "col8"></td>
+                </tr>
+    
+                <tr>
+                    <td class="input_style">参加日</td>
+                    <td class="page4_table" id = "col9"></td>
+                </tr>
+            </table>
+
+                   
+        </div>
+        <div class="sent">
+            <input type="button" onclick="back_page3()" value="戻る" class="back">
+            <input type="button" onclick="next5()" value="次へ" class="next">
+        </div>         
+    </div>
+</div>
+
+
+<!--page5-->
+
+
+<div id = "page5">
+    <div class="school_logo">
+        <img src="images/tokyo_logo.svg" alt="tokyo_logo" id = "select5_logo">
+    </div>
+
+
+    <div class="step_wrap">
+        <ol class="step">
+            <li>学科選択</li>
+            <li>情報入力</li>
+            <li>確認</li>
+            <li class="is-current">完成</li>
+          </ol>   
+    </div>
+
+    <div class="content">
+        <div class="bar">
+            <h2>完成</h2>
+        </div>
+        <div class="last">
+            <h2>送信完了しました</h2>
+            <article>申し込みは送信されました。ありがとうございます。</article>
+            
+            <div class="sent">
+                <input type="button" onclick="window.location.reload();" value="戻る" class="home">
+            </div>    
+        </div>
+     
+    </div>
+</div>
+
+
+
+
+
+<!--フッター-->
+<footer>
+    <small>Copyright HAL</small>
+</footer>
+
+
+</body>
+
+
+</html>
+
+

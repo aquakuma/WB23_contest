@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+body
+{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: "ＭＳ Ｐゴシック","MS PGothic";
+    margin:0;
+    padding:0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/*ナビゲーション*/
+
+header {
+    /*overflow: hidden;	*/
+    /*下のコンテンツが表示される*/
+	/*position: fixed;*/
+	/*background-color: rgb(236, 236, 236);*/
+    height: 60px;
+    background-color: #6392cd;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+}
+
+header img{
+    height: 50px;
+    width: auto;
+}
+
+.title{
+    width: 1200px;
+    color: #4a7ec0;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.aisatsu{
+    font-size: 16px;
+    text-align: center;
+    margin: -20px auto;
+    width: 1200px;
+
+}
+
+.content{
+    font-size: 18px;
+    /*width: 1300px;*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content article{
+    margin: 20px auto;
+    width: 1050px;
+    line-height: 1.8em;
+    font-size: 16px;
+    text-align: left;
+}
+
+.content img{
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.bar{
+    width: 1100px;
+    background-color: #dddbdb;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-left:solid 18px #2c3a94;
+}
+
+.bar h2{
+    margin-left: 18px;
+}
+
+.content table{
+    width: 800px;
+    margin: 0 auto;
+    line-height: 2em;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+.content td{
+    padding-bottom: 40px;
+    vertical-align:top;
+}
+
+#page2_tokyo{
+    display: none;
+}
+
+#page2_osaka{
+    display: none;
+}
+
+#page2_nagoya{
+    display: none;
+}
+
+#page3{
+    display: none;
+}
+#page4{
+    display: none;
+}
+#page5{
+    display: none;
+}
+
+.school_logo{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.school_logo img{
+    width: 300px;
+    height: auto;
+}
+
+
+.sent{
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.back{
+    background-color: #c6c6c6;
+    width: 120px;
+    font-size: 18px;
+    margin-right: 200px;
+}
+
+.next{
+    background-color: #252525;
+    color: white;
+    width: 120px;
+    font-size: 18px;
+    margin-left: 200px;
+}
+
+.home{
+    background-color: #66a8dc;
+    color: white;
+    border: 2px outset;
+    border-radius: 6px;
+    width: 6em;
+    height: 2.5em;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+/*step*/
+
+.step_wrap{
+    width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.step{
+    list-style-type: none;
+    display:table;
+    width:100%;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+  }
+  .step li{
+    display:table-cell;
+    position:relative;
+    background: #463935;
+    padding: 1em 0.5em 1em 2em;
+    color: #fff;
+    width: 120px;
+    font-size: 18px;
+  }
+  .step li:last-child{
+    padding-right: 1em;
+  }
+  .step li:last-child:before,
+  .step li:last-child:after{
+    display:none;
+  }
+  .step li:before,
+  .step li:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: auto;
+  }
+  .step li:before{
+    top:-15px;
+    right:-1em;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    border-width: 40px 0 40px 1em;
+    z-index: 10;
+  }
+  .step li:after{
+    top:-15px;
+    right:-.8em;
+    border-style: solid;
+    border-color: transparent transparent transparent #463935;
+    border-width: 40px 0 40px 1em;
+    z-index: 10;
+  }
+  .step li.is-current{
+    background: #4a7ec0;
+    font-weight: bold;
+  }
+  .step li.is-current:after{
+    border-color: transparent transparent transparent #4a7ec0;
+  }
+
+
+
+.info_input{
+    margin: 50px auto;
+    width: 1000px;
+    display: table;
+}
+
+.info_input table{
+    width: 900px;
+    margin: 0 auto;
+    border-width: thin; 
+    border-style: outset; 
+    border-collapse: collapse;   
+    display: table;
+
+    
+}
+
+.info_input td{
+    padding-left: 1em;
+    padding-top: 1em;
+    display:table-cell;
+    /*height: 40px;*/
+    vertical-align: middle;
+    
+}
+
+.input_style{
+    background-color: #faf7bf;
+}
+
+.input_moji{
+    color: #6d1718;
+}
+
+.input_hissu{
+    color: white;
+    background-color: #d42c45;
+    float: right;
+    border: solid 1px black;
+    width: 2.5em;
+    font-size: 16px;
+    margin-right: 1em;
+    height: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+.info_input input{
+    background-color: #ca91b6;
+    height: 1.8em;
+}
+
+.info_input input:focus{
+    border:solid 3px rgb(255, 77, 77);
+}
+
+.page4_table{
+    width: 600px;
+}
+
+.last{
+    margin: 40px auto;
+}
+
+.last h2{
+    font-size: 40px;
+
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.last h2:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;/*線の上下位置*/
+    display: inline-block;
+    width: 5em;/*線の長さ*/
+    height: 2px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #2ea7e0;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+
+.last article{
+    text-align: center;
+    font-size: 22px;
+}
+
+/*フッター*/
+footer{
+    height: 40px;
+    background-color: #6392cd;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    padding-top: 1em;
+    margin-top: auto;
+}
